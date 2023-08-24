@@ -14,7 +14,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (y = 0 ; y < n && *src != '\0' ; y++)
 	{
-		dest[len + y] = src[y];
+		dest[len + y] = *src;
 		src++;
 	}
 	dest[len + y] = '\0';
